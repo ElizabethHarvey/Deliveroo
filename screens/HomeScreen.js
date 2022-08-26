@@ -1,5 +1,5 @@
 import React, {useLayoutEffect} from 'react';
-import {View, Text, Image, TextInput} from 'react-native';
+import {View, Text, Image, TextInput, ScrollView} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {
@@ -19,10 +19,11 @@ const HomeScreen = () => {
   });
 
   return (
-    <SafeAreaView className="bg-white pt-5">
-      <Text className="text-red-500">
+    <SafeAreaView className="bg-white pt-2">
+       {/* pt-5 was taken out because it made the header too big */}
+
         {/* Header */}
-        <View className="flex-row pb-3 items-center mx-4 space-x-2">
+        <View className="flex-row pb-3 items-center mx-4 space-x-2 px-4">
           <Image
             source={{
               uri: 'https://links.papareact.com/wru',
@@ -43,9 +44,10 @@ const HomeScreen = () => {
         </View>
 
         {/* Search */}
-        <View>
-          <View>
-            <MagnifyingGlassIcon color="#00CCBB" />
+        <View className="flex-row items-center space-x-2 pb-1 mx-2">
+          {/* mx-4 but I changed it to 2 because it was to much */}
+          <View className='flex-row flex-1 space-x-2 bg-gray-200 p-3'>
+            <MagnifyingGlassIcon size={20} color="gray" />
             <TextInput
               placeholder="Restaurants and Cuisines"
               keyboardType="default"
@@ -53,7 +55,13 @@ const HomeScreen = () => {
           </View>
           <AdjustmentsVerticalIcon color="#00CCBB" />
         </View>
-      </Text>
+
+        {/* Body */}
+        <ScrollView>
+           {/* Categories */}
+
+           {/* Featured Rows */}
+        </ScrollView>
     </SafeAreaView>
   );
 };
