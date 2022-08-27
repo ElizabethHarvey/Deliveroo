@@ -3,6 +3,8 @@ import React from 'react';
 import {ArrowRightIcon} from 'react-native-heroicons/outline';
 import RestaurantCard from './RestaurantCard';
 
+
+
 const FeaturedRow = ({id, title, description}) => {
   return (
     <View>
@@ -18,16 +20,52 @@ const FeaturedRow = ({id, title, description}) => {
         contentContainerStyle={{
           paddingHorizontal: 15,
         }}
-        showsHorizontalScrollIndicator={true}
+        showsHorizontalScrollIndicator={false}
         className="pt-4"
         >
         {/* Restaurant */}
         <RestaurantCard 
           id={123}
-          imgUrl='https://inks.papareact.com/gn7'
+          imgUrl="https://links.papareact.com/gn7"
           title='Yo! Sushi'
           rating={4.5}
-          genre='Jap'
+          genre='Japanese'
+          address='123 Main St'
+          short_description='This is a Test description'
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+           <RestaurantCard 
+          id={123}
+          imgUrl="https://links.papareact.com/gn7"
+          title='Yo! Sushi'
+          rating={4.5}
+          genre='Japanese'
+          address='123 Main St'
+          short_description='This is a Test description'
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+           <RestaurantCard 
+          id={123}
+          imgUrl="https://links.papareact.com/gn7"
+          title='Yo! Sushi'
+          rating={4.5}
+          genre='Japanese'
+          address='123 Main St'
+          short_description='This is a Test description'
+          dishes={[]}
+          long={20}
+          lat={0}
+        />
+           <RestaurantCard 
+          id={123}
+          imgUrl="https://links.papareact.com/gn7"
+          title='Yo! Sushi'
+          rating={4.5}
+          genre='Japanese'
           address='123 Main St'
           short_description='This is a Test description'
           dishes={[]}
