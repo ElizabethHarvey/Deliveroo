@@ -10,6 +10,7 @@ import {
 } from 'react-native-heroicons/outline';
 
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -21,8 +22,9 @@ const HomeScreen = () => {
   });
 
   return (
-    <SafeAreaView className="bg-white pt-5">
-        {/* Header */}
+    <SafeAreaView>
+      {/* Header */}
+      <View className='bg-white pt-5'>
         <View className="flex-row pb-3 items-center mx-4 space-x-2">
           <Image
             source={{
@@ -54,18 +56,24 @@ const HomeScreen = () => {
           </View>
           <AdjustmentsVerticalIcon color="#00CCBB" />
         </View>
+      </View>
 
-        {/* Body */}
-        <ScrollView
-          className="bg-gray-100 "
-          contentContainerStyle={{
-            paddingBottom: 100,
-          }}>
-          {/* Categories */}
-          <Categories />
+      {/* Body */}
+      <ScrollView
+        className="bg-gray-100 "
+        contentContainerStyle={{
+          paddingBottom: 100,
+        }}>
+        {/* Categories */}
+        <Categories />
 
-          {/* Featured Rows */}
-        </ScrollView>
+        {/* Featured Rows */}
+        <FeaturedRow
+          title="Featured"
+          description="Paid placement from our partners"
+          featuredCategory="featured"
+        />
+      </ScrollView>
     </SafeAreaView>
   );
 };
