@@ -9,6 +9,8 @@ import {
   AdjustmentsVerticalIcon,
 } from 'react-native-heroicons/outline';
 
+import Categories from '../components/Categories';
+
 const HomeScreen = () => {
   const navigation = useNavigation();
 
@@ -19,11 +21,9 @@ const HomeScreen = () => {
   });
 
   return (
-    <SafeAreaView className="bg-white pt-2">
-       {/* pt-5 was taken out because it made the header too big */}
-
+    <SafeAreaView className="bg-white pt-5">
         {/* Header */}
-        <View className="flex-row pb-3 items-center mx-4 space-x-2 px-4">
+        <View className="flex-row pb-3 items-center mx-4 space-x-2">
           <Image
             source={{
               uri: 'https://links.papareact.com/wru',
@@ -44,9 +44,8 @@ const HomeScreen = () => {
         </View>
 
         {/* Search */}
-        <View className="flex-row items-center space-x-2 pb-1 mx-2">
-          {/* mx-4 but I changed it to 2 because it was to much */}
-          <View className='flex-row flex-1 space-x-2 bg-gray-200 p-3'>
+        <View className="flex-row items-center space-x-2 pb-1 mx-4">
+          <View className="flex-row flex-1 space-x-2 bg-gray-200 p-3">
             <MagnifyingGlassIcon size={20} color="gray" />
             <TextInput
               placeholder="Restaurants and Cuisines"
@@ -57,10 +56,15 @@ const HomeScreen = () => {
         </View>
 
         {/* Body */}
-        <ScrollView>
-           {/* Categories */}
+        <ScrollView
+          className="bg-gray-100 "
+          contentContainerStyle={{
+            paddingBottom: 100,
+          }}>
+          {/* Categories */}
+          <Categories />
 
-           {/* Featured Rows */}
+          {/* Featured Rows */}
         </ScrollView>
     </SafeAreaView>
   );
