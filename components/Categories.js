@@ -14,7 +14,7 @@ const Categories = () => {
       {/* CategoryCards */}
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 3"
+        title="Testing 1"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
@@ -22,35 +22,35 @@ const Categories = () => {
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 1"
+        title="Testing 3"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 233"
+        title="Testing 4"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 1"
+        title="Testing 5"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 76"
+        title="Testing 6"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 21"
+        title="Testing 7"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 66"
+        title="Testing 8"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 33"
+        title="Testing 9"
       />
       <CategoryCard
         imgUrl="https://links.papareact.com/gn7"
-        title="Testing 54"
+        title="Testing 10"
       />
     </ScrollView>
   );
