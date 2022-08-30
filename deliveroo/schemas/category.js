@@ -1,6 +1,6 @@
 export default {
   name: 'category',
-  title: 'Category',
+  title: 'Menu Category',
   type: 'document',
   fields: [
     {
@@ -12,7 +12,7 @@ export default {
     {
       name: 'image',
       type: 'image',
-      title: 'Image of the restaurant',
+      title: 'Image of the category',
     },
   ],
 }

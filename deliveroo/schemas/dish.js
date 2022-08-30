@@ -6,24 +6,24 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'name of dish',
+      title: 'Dish Name',
       validation: Rule => Rule.required(),
     },
     {
       name: 'short_description',
       type: 'string',
-      title: 'Short_Description',
+      title: 'Short Description',
       validation: Rule => Rule.max(200),
     },
     {
       name: 'price',
       type: 'number',
-      title: 'Price of the dish in GPS',
+      title: 'Price of the dish in GBP',
     },
     {
       name: 'image',
       type: 'image',
-      title: 'Image of the dish',
+      title: 'Image of the Dish',
     },
   ],
 };
